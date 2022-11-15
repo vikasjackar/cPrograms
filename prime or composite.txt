@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+int n,m,i=2,vikas=0;
+printf("enter the number:");
+scanf("%d",&n);
+m=n/2;
+while(i<=m)
+{
+    if(n%i==0){
+     vikas=1;
+     break;
+    }
+    i++;
+}
+
+if(vikas==0)
+    printf("number is prime");
+else
+printf("number is composite.");
+
+ return 0;
+}
