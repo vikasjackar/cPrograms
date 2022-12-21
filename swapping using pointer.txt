@@ -1,0 +1,27 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+void swap(int*,int*);
+
+int main()
+{
+    int a,b;
+    printf("enter two numbers:");
+    scanf("%d%d",&a,&b);
+    swap(&a,&b);
+    printf("swapped values are:%d and %d",a,b);
+    return 0;
+}
+void swap(int *x, int *y)
+{
+    int c;
+    c=*x;
+    *x=*y;
+    *y=c;
+}
