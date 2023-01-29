@@ -47,7 +47,6 @@ int main(void) {
 	        scanf("%d",&a[i]);
 	    }
 	    QS(a,0,n - 1);
-	    
 	    for(i=1;i<n;i++)
 	    {
 	        if(a[i]==a[i - 1])
@@ -55,6 +54,7 @@ int main(void) {
 	            count--;
 	        }
 	    }
+	    
 	    printf("%d\n",count);
 	}
 	return 0;
